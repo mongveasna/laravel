@@ -19,3 +19,13 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+Route::get('about', function(){
+
+    return "Hello world";
+});
+Route::get('about/{subject}', function($subject){
+    return $subject."Hello";
+});
+Route::get("about/class/{subject}", function($subject){
+    return "Hell world {$subject}";
+});
