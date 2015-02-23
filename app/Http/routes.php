@@ -29,3 +29,8 @@ Route::get('about/{subject}', function($subject){
 Route::get("about/class/{subject}", function($subject){
     return "Hell world {$subject}";
 });
+
+
+Route::get('about/hello/',  function (){
+    return "Hello";
+});
